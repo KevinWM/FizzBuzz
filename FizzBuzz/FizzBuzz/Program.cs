@@ -10,6 +10,14 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
+            while(true)
+            { 
+            Modelo modelo = new Modelo();
+            Vista vista = new Vista(modelo);
+            Controlador controlador = new Controlador(modelo, vista);
+
+            controlador.iniciarJuego();
+            }
         }
     }
 }
